@@ -20,6 +20,8 @@ public class RegisterController {
 //            校验用户名长度
         } else if (user.length() > 15) {
             return new RegisterResponse("用户名过长");
+        } else if (pwd.isEmpty()) {
+            return  new RegisterResponse("密码为空");
         }
 //        增加其他校验
         else {
