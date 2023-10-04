@@ -23,7 +23,7 @@ public class RegisterController {
         } else if (pwd.isEmpty()) {
             return  new RegisterResponse("密码为空");
         }
-//        增加其他校验
+//        其他校验
         else {
             return new RegisterResponse("succeed");
         }
